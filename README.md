@@ -1,16 +1,86 @@
-# React + Vite
+# Media Search App 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **Media Search Application** built using **React, Redux Toolkit, and Vite**, allowing users to search **photos, videos, and GIFs** using public APIs and manage a personal collection.
 
-Currently, two official plugins are available:
+This project focuses not only on UI but on **solid JavaScript logic, Redux state flow, async handling, and real-world debugging**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🔗 Live Demo
+👉 https://your-netlify-link.netlify.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 💻 GitHub Repository
+👉 https://github.com/your-username/media-search-redux
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- **React** (Component-based UI)
+- **Redux Toolkit** (Global state management)
+- **Vite** (Fast build tool)
+- **Axios** (API handling)
+- **Unsplash API** (Photos)
+- **Pexels API** (Videos)
+- **Tenor API** (GIFs)
+- **Netlify** (Deployment)
+
+---
+
+## ✨ Features
+
+- 🔍 Search media using keywords
+- 🖼 Switch between **Photos / Videos / GIFs**
+- 💾 Save media to a personal collection
+- ❌ Remove items from collection
+- 🔄 Persistent data using LocalStorage
+- ⚡ Fast UI with Vite
+- 🌐 Deployed on Netlify
+
+---
+
+## 🧠 What I Focused On (Important)
+
+This project was built with a **learning-first approach**, where I intentionally focused on:
+
+- **Redux state design**  
+  - Proper slice separation (`searchSlice`, `collectionSlice`)
+  - Predictable state flow
+- **Asynchronous logic handling**
+  - API calls with loading & error states
+- **Debugging real-world issues**
+  - Silent Redux bugs (`activeTab` vs `activeTabs`)
+  - API authentication errors (401 handling)
+  - Environment variable handling in Vite & Netlify
+- **JavaScript logic clarity**
+  - Conditional rendering
+  - Data transformation from APIs
+  - Defensive coding to avoid runtime crashes
+
+Instead of blindly following tutorials, I **debugged issues step-by-step**, verified state using logs, and fixed real deployment problems.
+
+---
+
+## 📁 Project Structure
+
+src/
+├── api/ # API calls (Unsplash, Pexels, Tenor)
+├── components/ # Reusable UI components
+├── pages/ # Page-level components
+├── redux/
+│ ├── features/ # Redux slices
+│ └── store.js # Redux store
+├── App.jsx
+├── main.jsx
+
+
+
+---
+
+## 🚀 How to Run Locally
+
+```bash
+git clone https://github.com/your-username/media-search-redux.git
+cd media-search-redux
+npm install
+npm run dev
